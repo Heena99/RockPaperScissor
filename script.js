@@ -112,7 +112,7 @@ function updatescore(opt1, opt2) {
 }
 
 function hurray() {
-    window.location.replace("http://127.0.0.1:5500/JS%20Test/index2.html");
+    window.location.replace("index2.html");
 }
 
 function openrules() {
