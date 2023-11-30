@@ -60,7 +60,7 @@ function playagain() {
 }
 
 function playagain2() {
-    window.location.replace("http://127.0.0.1:5500/JS%20Test/index.html")
+    window.location.replace("https://heena99.github.io/RockPaperScissor/")
 
     document.querySelector('.result').style.display = "none";
     document.querySelector('.game').style.display = "block";
