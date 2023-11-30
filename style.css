@@ -66,6 +66,7 @@ body {
     border-radius: 50%;
     display: flex;
     cursor: pointer;
+    box-shadow: -1px 1px 11px 0px #00000059;
 }
 
 .optwin {
@@ -76,6 +77,7 @@ body {
     display: flex;
     cursor: pointer;
     box-shadow:
+    -1px 1px 11px 0px #00000059,
         0 0 0 30px #2E9A25,
         0 0 0 50px #1DA82B,
         0 0 0 70px #2E9A2563;
@@ -106,16 +108,32 @@ img {
     margin: 170px auto;
 }
 
-.box {
+.box1 {
     width: 230px;
     aspect-ratio: 1;
     clip-path: polygon(100.00% 50.00%,25.00% 93.30%,25.00% 6.70%);
-    background-color: beige;
+    background-color: #89C15E;
     transform: rotate(90deg);
     position: absolute;
-    left: 315px;
     z-index: -3;
-    top: 305px;
+    
+  }
+
+  .box2 {
+    width: 270px;
+    aspect-ratio: 1;
+    clip-path: polygon(100.00% 50.00%,25.00% 93.30%,25.00% 6.70%);
+    background: #000000A3;
+    transform: rotate(90deg);
+    position: absolute;
+    z-index: -4;
+    top: 41.5%;
+  }
+
+  .game{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
 .rules, .next {
@@ -156,6 +174,7 @@ img {
     font-family: 'Roboto';
     padding: 20px;
     font-size: x-small;
+    z-index: 2;
 }
 
 
@@ -241,5 +260,5 @@ li {
     letter-spacing: 1px;
     font-size: 12px;
     color: white;
-    z-index: 3;
+    z-index: 1;
 }

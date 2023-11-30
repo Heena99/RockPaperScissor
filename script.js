@@ -60,7 +60,7 @@ function playagain() {
 }
 
 function playagain2() {
-    window.location.replace("https://heena99.github.io/RockPaperScissor/index.html")
+    window.location.replace("index.html")
 
     document.querySelector('.result').style.display = "none";
     document.querySelector('.game').style.display = "block";
@@ -112,7 +112,7 @@ function updatescore(opt1, opt2) {
 }
 
 function hurray() {
-    window.location.replace("https://heena99.github.io/RockPaperScissor/index2.html");
+    window.location.replace("ndex2.html");
 }
 
 function openrules() {
