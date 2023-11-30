@@ -112,7 +112,7 @@ function updatescore(opt1, opt2) {
 }
 
 function hurray() {
-    window.location.replace("index2.html");
+    window.location.replace("https://heena99.github.io/RockPaperScissor/index2.html");
 }
 
 function openrules() {
