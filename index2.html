@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dangrek&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <img src="Stars.png" alt="" class="stars">
+    <div class="hurray">
+        <img src="Trophy.png" alt="" class="trophy">
+        <p class="firstline">HURRAY!!</p>
+        <P class="secondline">YOU WON THE GAME</P>
+        <button onclick="playagain2()" class="playagain">PLAY AGAIN</button>
+    </div>
+    <div class="rulelist">
+        <button class="x" onclick="closerules()">X</button>
+        <div class="content">
+            <h1 class="heading">Game Rules</h1><br>
+            <ul>
+                <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                <br>
+                <li>Agree ahead of time whether you'll count off “rock, paper, scissors, shoot” or just “rock, paper,
+                    scissors.”</li>
+                <br>
+                <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                <br>
+                <li>If both players lay down the same hand, each player lays down another hand</li>
+            </ul>
+        </div>
+    </div>
+    <button class="rules" onclick="openrules()">RULES</button>
+</body>
+<script src="script.js"></script>
+
+</html>

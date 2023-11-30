@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dangrek&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="scorecard">
+        <div class="names">
+            <p>ROCK</p>
+            <p>PAPER</p>
+            <p>SCISSOR</p>
+        </div>
+        <div class="score">
+            <p>COMPUTER<br>SCORE</p>
+            <p class="big" id="compscore">0</p>
+        </div>
+        <div class="score">
+            <p>YOUR<br>SCORE</p>
+            <p class="big" id="myscore">0</p>
+        </div>
+    </div>
+
+    <div class="game">
+        <!-- <div class="box"></div> -->
+        <div class="choose">
+            <div class="opt" id="Rock" onclick="play(this)"><img src="Rock.svg" alt=""></div>
+            <div class="opt" id="Scissor" onclick="play(this)"><img src="Scissor.svg" alt=""></div>
+        </div>
+        <div class="opt" id="Paper" onclick="play(this)" style="margin: 50px auto;"><img src="Paper.svg" alt=""></div>
+    </div>
+
+    <div class="result">
+        <div class="left">
+            <div class="youpick">YOU PICKED</div>
+            <div class="opt"><img src="Paper.svg" alt=""></div>
+        </div>
+        <div class="msg">
+            <p class="win"></p>
+            <p class="secondline">AGAINST PC</p>
+            <button onclick="playagain()" class="playagain">PLAY AGAIN</button>
+        </div>
+        <div class="right">
+            <div class="pcpick">PC PICKED</div>
+            <div class="opt"><img src="Rock.svg" alt=""></div>
+        </div>
+    </div>
+
+    <div class="rulelist">
+        <button class="x" onclick="closerules()">X</button>
+        <div class="content">
+            <h1 class="heading">Game Rules</h1><br>
+            <ul>
+                <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                <br>
+                <li>Agree ahead of time whether you'll count off “rock, paper, scissors, shoot” or just “rock, paper,
+                    scissors.”</li>
+                <br>
+                <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                <br>
+                <li>If both players lay down the same hand, each player lays down another hand</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button class="rules" onclick="openrules()">RULES</button>
+        <button class="next" onclick="hurray()">NEXT</a></button>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
