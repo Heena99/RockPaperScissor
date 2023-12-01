@@ -298,3 +298,8 @@ li {
     left: 49%;
     z-index: -1;
 }
+
+.next{
+    text-decoration: none;
+    padding: 3px 14px;
+}
