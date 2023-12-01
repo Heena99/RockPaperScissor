@@ -108,7 +108,7 @@ img {
     margin: 170px auto;
 }
 
-.box1 {
+/* .box1 {
     width: 230px;
     aspect-ratio: 1;
     clip-path: polygon(100.00% 50.00%,25.00% 93.30%,25.00% 6.70%);
@@ -128,12 +128,13 @@ img {
     position: absolute;
     z-index: -4;
     top: 41.5%;
-  }
+  } */
 
   .game{
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
   }
 
 .rules, .next {
@@ -261,4 +262,39 @@ li {
     font-size: 12px;
     color: white;
     z-index: 1;
+}
+
+.pipe1{
+    height: 16px;
+    width: 140px;
+    background-color: black;
+    position: absolute;
+    top: 17%;
+    left: 44%;
+    z-index: -1;
+    opacity: 60%;
+}
+
+.pipe2{
+    width: 140px;
+    height: 16px;
+    background-color: black;
+    position: absolute;
+    transform: rotate(60deg);
+    left: 41%;
+    top: 37%;
+    z-index: -1;
+    opacity: 60%;
+}
+
+.pipe3{
+    height: 16px;
+    width: 140px;
+    background-color: black;
+    opacity: 60%;
+    position: absolute;
+    transform: rotate(-60deg);
+    top: 37%;
+    left: 49%;
+    z-index: -1;
 }
